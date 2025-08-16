@@ -1,9 +1,9 @@
 class Tile():
-    def __init__(self, x, y):
+    def __init__(self, x, y, elevation, type):
         self.x = x
         self.y = y
-        self.type = "grass"
-        self.elevation = 0.0
-
-    def set_elevation(self, elevation):
         self.elevation = elevation
+        self.type = type
+
+    def get_elevation(self):
+        return self.elevation

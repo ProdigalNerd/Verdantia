@@ -2,13 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: __main__.py from Root",
+            "name": "Python Debugger: __main__.py",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/__main__.py",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
-            "sudo": true
         }
     ]
 }

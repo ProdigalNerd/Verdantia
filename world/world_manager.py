@@ -6,7 +6,8 @@ class WorldManager():
         self.map_manager = MapManager()
 
     def update(self):
-        print("World is Updating")
-
-    def __render_map__(self):
+        # print("World is Updating")
         pass
+
+    def get_map(self):
+        return self.map_manager.get_map()

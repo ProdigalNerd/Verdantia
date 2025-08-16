@@ -5,7 +5,7 @@ class PerlinNoise():
     def __init__(self, width, height):
         self.width = width
         self.height = height
-        self.scale = 100
+        self.scale = 175
         self.octaves = 6         # Number of layers of noise to combine
         self.persistence = 0.5   # Amplitude multiplier for each successive octave
         self.lacunarity = 2.0    # Frequency multiplier for each successive octave
