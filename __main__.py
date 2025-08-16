@@ -1,10 +1,10 @@
 from tick_controller import TickController
 import keyboard
 
+from world.world_manager import WorldManager
+
 tick_controller = TickController()
-tick_controller.register("Module1")
-tick_controller.register("Module2")
-tick_controller.register("Module3")
+tick_controller.register(WorldManager())
 
 print("Press SPACE to process tick, ESC to exit.")
 

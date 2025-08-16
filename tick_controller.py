@@ -8,5 +8,5 @@ class TickController():
 
     def process_tick(self):
         for module in self.modules:
-            print("A tick for a module has occurred")
+            module.update()
         self.ticks += 1
