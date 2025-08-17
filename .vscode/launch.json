@@ -2,12 +2,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: __main__.py",
+            "name": "Python Debugger: verdantia.app",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/__main__.py",
+            "module": "verdantia.app",
             "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
+            "console": "integratedTerminal"
         }
     ]
 }
