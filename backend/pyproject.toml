@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "verdantia-backend"
+version = "0.1.0"
+description = "Backend for Verdantia text-RPG (FastAPI + websockets)"
+authors = ["ProdigalNerd <>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+sqlalchemy = "^2.0.0"
+asyncpg = "^0.27.0"
+alembic = "^1.11.0"
+pydantic = "^1.10.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "*"
+httpx = "^0.24.0"
+black = "^23.9.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "C90", "I"]
+
+[tool.black]
+line-length = 88

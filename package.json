@@ -1,0 +1,14 @@
+{
+  "name": "verdantia-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "start:frontend": "pnpm --filter frontend --dir frontend dev",
+    "test:frontend": "pnpm --filter frontend --dir frontend test",
+    "test:backend": "echo 'Run backend tests with: cd backend && poetry run pytest'",
+    "test:all": "pnpm --filter frontend --dir frontend test && echo 'Run backend tests separately'"
+  }
+}
